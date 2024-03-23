@@ -4,7 +4,7 @@ module testbench_fir();
     reg   clock,
           reset;
        
-    wire  [9:0] data_sin;
+    wire  [7:0] data_sin;
     wire  [16:0] Data_Out;
     
     FIR_filter UUT(clock, reset, data_sin, Data_Out);
