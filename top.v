@@ -7,17 +7,18 @@ module FIR_filter(
     data_sin,  // output sine wave values
     Data_Out   // filtered output
     );    
+        
+    parameter num_bits    = 8;
+    parameter input_size  = 8;
+    parameter output_size = (2*num_bits) + 1;
     
     input   clock,
             reset;
     
-    output [9:0] data_sin;
+    output [input_size - 1:0] data_sin;
     
     wire [9:0] phase; // 10 bit phase register from the phase accumulator
-    
-    parameter num_bits    = 8;
-    parameter input_size  = 10;
-    parameter output_size = (2*num_bits) + 1;
+
     
     output [output_size - 1:0] Data_Out;
     
