@@ -10,7 +10,7 @@ module filter(
     // PARAMETERS    
     parameter taps        = 32;
     parameter num_bits    = 8;
-    parameter input_size  = 10;
+    parameter input_size  = 8;
     parameter output_size = (2*num_bits) + 1;
     
     // I/O Ports
