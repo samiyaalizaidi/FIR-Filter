@@ -1,4 +1,4 @@
-# Low Pass Filter Using Verilog HDL
+# Low Pass FIR Filter 
 
 Designing a system that acts as a low-pass filter in Verilog.
 
@@ -23,7 +23,7 @@ Along with this, I applied some other preprocessing steps before using these val
 To apply the filter, the input signal was simply shifted after every multiplication and accumulation operation.
 
 ## Input Signals & Results
-The input signals for this task were obtained from the output of a [https://github.com/samiyaalizaidi/Direct-Digital-Synthesizer](Direct Digital Synthesizer). 
+The input signals for this task were obtained from the output of a [Direct Digital Synthesizer](https://github.com/samiyaalizaidi/Direct-Digital-Synthesizer). 
 
 The input signals along with their filtered output are shown below. According to the parameters, all frequencies below 50KHz should be allowed to pass, and all frequencies above 110Khz should be completely blocked.
 
